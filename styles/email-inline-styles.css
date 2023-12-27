@@ -9,22 +9,31 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
+
+h1, h2, h3 {
+    line-height: 1.25;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
-main,
-header,
-footer {
-  display: none;
+a {
+    color: #035fe6;
+    text-decoration: none;
 }
 
-iframe {
-  border: none;
-  position: relative;
-  z-index: 1;
+h1 {
+    font-size: 33px;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(215 145 32);
+    font-weight: 400;
 }

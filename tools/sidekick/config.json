@@ -1,0 +1,44 @@
+{
+    "project": "ajo-integration-demo",
+    "plugins": [
+        {
+            "id": "ajo",
+            "title": "AJO",
+            "environments": [
+                "preview",
+                "admin",
+                "dev",
+                "prod"
+            ],
+            "event": "login",
+            "url": "/tools/ajo/ajo.html",
+            "passConfig": true,
+            "passReferrer": true,
+            "isPalette": true,
+            "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 450px; height: 425px; border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: both;"
+        },
+        {
+            "id": "asset-library",
+            "title": "My Assets",
+            "environments": [
+                "edit"
+            ],
+            "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",
+            "isPalette": true,
+            "includePaths": [
+                "**.docx**"
+            ],
+            "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
+        },
+        {
+            "id": "copyHtml",
+            "title": "Copy E-Mail",
+            "environments": [
+                "dev",
+                "preview",
+                "live"
+            ],
+            "event": "copyHtml"
+        }
+    ]
+}
